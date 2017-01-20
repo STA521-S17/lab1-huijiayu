@@ -81,6 +81,7 @@ look at the first 5 columns.
 
 ```{r, fig.width=8}
 pairs(College[, 1:5])
+pairs(Apps~Private+Accept+Enroll+Top10perc, data = College)
 ```
 
 We can also look at this using the `ggpairs` function.
